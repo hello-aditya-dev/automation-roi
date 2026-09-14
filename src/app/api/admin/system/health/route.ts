@@ -14,7 +14,7 @@ import { requireSuperAdmin, AuthError } from '@/lib/auth';
 import {
   checkEnvConfig,
   checkDbConnectivity,
-  getRecentWebhookErrors,
+  getRecentCriticalEvents as getRecentWebhookErrors,
 } from '@/lib/admin/operational-queries';
 
 export const runtime = 'nodejs';
